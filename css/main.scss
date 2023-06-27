@@ -1,0 +1,28 @@
+$primary: #267898;
+$secondary: #CEC2B4;
+$light: #F5B148;
+$dark: #2E2F38;
+
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "light":      $light,
+  "dark":       $dark
+); 
+// Create your own map
+$roze: #CA2735;
+$custom-colors: (
+  "roze": #CA2735
+);
+
+// Merge the maps
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+$link-color:                              $secondary;
+$link-decoration:                         none; 
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+.bgr-roze{
+    background-color: $roze;
+}
